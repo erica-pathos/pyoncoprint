@@ -306,7 +306,7 @@ class OncoPrint:
                 ax.scatter(*scatter_mutations[mut], **scatter_kwargs)
 
         ax2 = ax.twinx()
-        ax2.sharey(ax)
+        # ax2.sharey(ax)
         ax2.set_yticks(range(len(self.sorted_genes)))
         ax2.set_yticklabels(self.sorted_genes)
         ax2.tick_params(top=False, bottom=False, left=False, right=False)
